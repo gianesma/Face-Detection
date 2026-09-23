@@ -13,7 +13,7 @@ while True:                    # ciclo che permette di continuare a catturare fr
         print("Failed to capture frame")
         break
 
-    original_frame = frame.copy()
+    original_frame = frame.copy() # useremo una copia da convertire in rgb
 
     # Converte il fotogramma in RGB per rilevare i volti.
     detection_rgb = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
